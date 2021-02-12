@@ -84,9 +84,9 @@ button {
   margin: 3.125rem auto 0 auto;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 400px) {
   .container {
-    max-width: 540px;
+    max-width: auto;
   }
 }
 
