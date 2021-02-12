@@ -86,7 +86,7 @@ button {
 
 @media (min-width: 100px) {
   .container {
-    max-width: auto;
+    max-width: 50px;
   }
 }
 
