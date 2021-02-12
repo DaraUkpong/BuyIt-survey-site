@@ -123,14 +123,14 @@ button {
 
 form {
   background: var(--color-darkblue-alpha);
-  margin: 1.0rem;
+  
   padding: 2.5rem 0.625rem;
   border-radius: 0.25rem;
 }
 
 @media (min-width: 480px) {
   form {
-    padding: 1.5rem;
+    padding: 2.5rem;
   }
 }
 
