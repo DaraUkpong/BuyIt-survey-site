@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
-/*(first font)@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
 
 :root {
-  --color-white: #0a0a0a;
-  --color-darkblue: #c3c3e7;
-  --color-darkblue-alpha: rgba(116, 116, 119, 0.8);
+  --color-white: #f3f3f3;
+  --color-darkblue: #1b1b32;
+  --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
   --color-green: #37af65;
 }
 
@@ -16,12 +15,11 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.4;
   color: var(--color-white);
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* mobile friendly alternative to using background-attachment: fixed */
@@ -36,14 +34,13 @@ body::before {
   background: var(--color-darkblue);
   background-image: linear-gradient(
       115deg,
-      rgba(201, 214, 243, 0.7),
-      rgba(184, 192, 197)
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
     ),
-    url(https://images.unsplash.com/photo-1539278670307-a69d04dc8a75?ixidMXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80);
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 h1 {
@@ -107,6 +104,7 @@ button {
 .description {
   font-style: italic;
   font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
 
 .clue {
@@ -123,7 +121,6 @@ button {
 
 form {
   background: var(--color-darkblue-alpha);
-  margin: 1.0rem;
   padding: 2.5rem 0.625rem;
   border-radius: 0.25rem;
 }
@@ -159,9 +156,7 @@ form {
 }
 
 .input-radio,
-.input-checkbox,
-.input-range
- {
+.input-checkbox {
   display: inline-block;
   margin-right: 0.625rem;
   min-height: 1.25rem;
