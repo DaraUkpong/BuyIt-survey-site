@@ -84,7 +84,7 @@ button {
 
 .container {
   width: 100%;
-  margin: 0.125rem auto 0 auto;
+  margin: 3.125rem auto 0 auto;
 }
 
 @media (min-width: 576px) {
@@ -159,7 +159,9 @@ form {
 }
 
 .input-radio,
-.input-checkbox {
+.input-checkbox,
+.input-range
+ {
   display: inline-block;
   margin-right: 0.625rem;
   min-height: 1.25rem;
