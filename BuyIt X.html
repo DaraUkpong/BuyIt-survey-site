@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BuyIt X</title>
+    <link href="BuyIt X.css" text="text/css" rel="stylesheet">
+  </head>
+    <body>
+      <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">BuyIt! Customer Survey</h1>
+        <p id="description" class="description text-center">
+          Due to the recent customer surge being experienced at BuyIt!, we are looking for ways to satisfy our customers better. The best way to do that is to get those choices from you - Our customers.
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Dara Ukpong"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="DaraUkpong@example.com"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="0"
+            max="70"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+        <div class="form-group">
+          <p>Which option best describes BuyIt!'s customer satisfaction</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select current satisfaction</option>
+            <option value="Excellent">Excellent!</option>
+            <option value="Good!">Good!</option>
+            <option value="Kinda Satisfying">Kinda Satisfying</option>
+            <option value="Bad">Bad!</option>
+            <option value="Crap">"Man, It's crap!"</option>
+          </select>
+        </div>
+    
+        <div class="form-group">
+          <p>Did you find enough range of Products?</p>
+          <label>
+            <input
+              name="product-range"
+              value="yes"
+              type="radio"
+              class="input-radio"
+              checked
+            />Yes</label
+          >
+          <label>
+            <input
+              name="product-range"
+              value="maybe"
+              type="radio"
+              class="input-radio"
+            />Maybe</label
+          >
+    
+          <label
+            ><input
+              name="product-range"
+              value="no"
+              type="radio"
+              class="input-radio"
+            />No</label
+          >
+        </div>
+    
+       <div class="form-group">
+            <p>
+              Did you find enough product details?
+          </p>
+              <label>
+                <input 
+                  name="product-details"
+                  value="yes"
+                  type="radio"
+                  class="input-radio"
+                  />Yes
+              </label>
+
+              <label>
+                <input 
+                  name="product-details"
+                  value="maybe"
+                  type="radio"
+                  class="input-radio"
+                  />Maybe
+              </label>
+
+              <label>
+                <input 
+                  name="product-details"
+                  value="no"
+                  type="radio"
+                  class="input-radio"
+                  />No
+              </label>
+
+       </div>
+
+          <div class="form-group">
+            <p>
+              Did you find enough product alternatives?
+            </p>
+
+              <label>
+                <input 
+                  name="product-alternatives"
+                  value="yes"
+                  type="radio"
+                  class="input-radio"
+                  />Yes
+              </label>
+
+              <label>
+                <input 
+                  name="product-alternatives"
+                  value="maybe"
+                  type="radio"
+                  class="input-radio"
+                  />Maybe
+              </label>
+
+              <label>
+                <input 
+                name="product-alternatives"
+                value="no"
+                type="radio"
+                class="input-radio"
+                />No
+              </label>
+
+          </div>
+    
+        <div class="form-group">
+          <p>
+            Which of our product categories do you think needs improvement?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+    
+          <label
+            ><input
+              name="prefer-category"
+              value="phones-&-accesories"
+              type="checkbox"
+              class="input-checkbox"
+            />Phones & Accessories</label
+          >
+          <label>
+            <input
+              name="prefer-category"
+              value="computing-&-accesories"
+              type="checkbox"
+              class="input-checkbox"
+            />Computing & Accessories</label
+          >
+          <label
+            ><input
+              name="prefer-category"
+              value="mens fashion"
+              type="checkbox"
+              class="input-checkbox"
+            />Men's Fashion</label
+          >
+          <label
+            ><input
+              name="prefer-category"
+              value="womens fashion"
+              type="checkbox"
+              class="input-checkbox"
+            />Women's Fashion</label
+          >
+          <label
+            ><input
+              name="prefer-category"
+              value="childrens fashion"
+              type="checkbox"
+              class="input-checkbox"
+            />Children's Fashion</label
+          >
+          <label
+            ><input
+              name="prefer-category"
+              value="diy lovers"
+              type="checkbox"
+              class="input-checkbox"
+            />DIY Lovers</label
+          >
+          <label
+            ><input
+              name="prefer-category"
+              value="home-&-decor"
+              type="checkbox"
+              class="input-checkbox"
+            />Home & Decor</label
+          >
+          <label
+            ><input
+              name="prefer-category"
+              value="fresh-mart"
+              type="checkbox"
+              class="input-checkbox"
+            />Fresh Mart</label>
+
+        </div>
+    
+        
+        <div class="form-group">
+          <p>
+            How safe did you feel sharing your card details?
+          </p>
+        <!--changed most-like to cardsafe-->
+          <select id="cardsafe" name="cardsafe" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="very unsafe">Very Unsafe</option>
+            <option value="not safe">NotSafe</option>
+            <option value="maybe">I Don't Know Bro</option>
+            <option value="safe">Safe</option>
+            <option value="very safe">Very Safe</option>
+          </select>
+        </div>
+
+        
+        <div class="form-group">
+          <p>
+            How was the checkout experience overall?
+          </p>
+          <!--changed mostlike to checkover-->
+          <select id="checkover" name="checkover" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="Excellent">Excellent!</option>
+            <option value="Good!">Good!</option>
+            <option value="Kinda Satisfying">Kinda Satisfying</option>
+            <option value="Bad">Bad!</option>
+            <option value="Crap">"Man, It's crap!"</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>
+            On a scale of 0-10, How likely are you to buy from us again?
+          </p>
+          <label>
+            <input 
+              name="likeliness"
+              value="number"
+              type="range"
+              class="input-range"/>
+          </label>
+        </div>
+
+
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            class="input-textarea"
+            name="comment"
+            placeholder="Tell us More!"
+          ></textarea>
+        </div>
+    
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+    </html>
