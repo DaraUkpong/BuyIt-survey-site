@@ -42,8 +42,8 @@ body::before {
   background-repeat: no-repeat;
   background-position: center;
 }
-@media (min-width: 100%) {
-  body { max-width: 97%;}
+@media (min-width: 576px) {
+  body { max-width: 540px;}
 }
 
 h1 {
