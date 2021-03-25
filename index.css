@@ -128,7 +128,7 @@ form {
 
 @media (min-width: 480px) {
   form {
-    Max-width: 460px;
+    Max-width: 100%;
   }
 }
 
