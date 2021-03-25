@@ -91,7 +91,10 @@ button {
   }
 }
 
-@media (min
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
 }
 
 .header {
