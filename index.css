@@ -128,7 +128,7 @@ form {
 
 @media (min-width: 480px) {
   form {
-    padding: 2.5rem;
+    Max-width: 460px;
   }
 }
 
